@@ -18,12 +18,12 @@
             <argument type="service" id="security.encoder_factory" />
         </service>
 
-        <service id="fos_oauth_server.server" class="%fos_oauth_server.server.class%">
+        <service id="fos_oauth_server.server" class="%fos_oauth_server.server.class%" public="true">
             <argument type="service" id="fos_oauth_server.storage" />
             <argument>%fos_oauth_server.server.options%</argument>
         </service>
 
-        <service id="fos_oauth_server.controller.token" class="FOS\OAuthServerBundle\Controller\TokenController">
+        <service id="fos_oauth_server.controller.token" class="FOS\OAuthServerBundle\Controller\TokenController" public="true">
             <argument type="service" id="fos_oauth_server.server" />
         </service>
     </services>
