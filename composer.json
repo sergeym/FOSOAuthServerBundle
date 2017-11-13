@@ -1,5 +1,5 @@
 {
-    "name": "novosga/oauth-server-bundle",
+    "name": "sergeym/oauth-server-bundle",
     "type": "symfony-bundle",
     "description": "Symfony4 OAuth Server Bundle",
     "keywords": ["oauth", "oauth2", "server"],
